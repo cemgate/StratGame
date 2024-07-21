@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Factories.cpp">
+      <UniqueIdentifier>{2aa148ff-8eba-4bc5-aea5-c0f7975e05b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Factories.cpp\CharacterFactories">
+      <UniqueIdentifier>{d4c2df02-002f-4c32-851b-333e2a87a724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Factories">
+      <UniqueIdentifier>{595cb859-2330-459c-ae2c-a564b0508634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Factories\CharacterFactories">
+      <UniqueIdentifier>{e10d2573-0608-4b5d-922e-c2c7c0f7f0f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Factories\AbstractFactory">
+      <UniqueIdentifier>{86914b25-521e-4f49-9f38-8aad0095de91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Characters">
+      <UniqueIdentifier>{c673ae8d-7ae4-4ea4-9e99-83ebc8b8663c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Characters">
+      <UniqueIdentifier>{74bf2774-809a-4d99-8e0c-01e559033e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Factories.cpp\AbstractFactory">
+      <UniqueIdentifier>{bcaa8afa-79bc-475e-b738-d9da1bcc397e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\GameplayManagers">
+      <UniqueIdentifier>{86165f51-55d3-423d-ae07-9ff38e8678ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\GameplayManagers">
+      <UniqueIdentifier>{240d2c37-a4cd-4095-b584-de6c28205aa0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcherType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="MageType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="SiegeType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="VehicleType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="WarriorType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkerType.cpp">
+      <Filter>Pliki źródłowe\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkerFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcherFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="MageFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="SiegeFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="VehicleFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="WarriorFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\CharacterFactories</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractCharacterFactory.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryManager.cpp">
+      <Filter>Pliki źródłowe\Factories.cpp\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="FilesManager.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseOfPlayer.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="MapGenerator.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArcherType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="MageType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="SiegeType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="VehicleType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="WarriorType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerType.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Pliki nagłówkowe\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcherFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="MageFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="SiegeFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="VehicleFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="WarriorFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\CharacterFactories</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractCharacterFactory.h">
+      <Filter>Pliki nagłówkowe\Factories\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryManager.h">
+      <Filter>Pliki nagłówkowe\Factories\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="FilesManager.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseOfPlayer.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="MapGenerator.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
