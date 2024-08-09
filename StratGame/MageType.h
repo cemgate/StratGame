@@ -1,45 +1,96 @@
 #pragma once
 #include "Entity.h"
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-#define AIRELEMENT TOSTRING(MAGE1)
-#define WATERELEMENT TOSTRING(MAGE2)
-#define FIRELEMENT TOSTRING(MAGE3)
-
 class MageType : public AnyEntity
 {
 public:
-	void makeNewType() override
+	MageType()
+		: AnyEntity('W', 100, 50, 10, 1, 1, 1, 1) {}
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class AirElement : public MageType
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class WaterElement : public AirElement
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class FireElement : public WaterElement
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };

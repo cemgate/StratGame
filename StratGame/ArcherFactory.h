@@ -3,8 +3,6 @@
 #include "ArcherType.h"
 
 
-
-
 inline bool operator ==( const int& type2, const EntityType::ArcherEvolution& type1 )
 {
 	return static_cast<int>(type1) == type2;

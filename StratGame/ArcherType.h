@@ -2,24 +2,23 @@
 #include"Entity.h"
 #include <iostream>
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-#define SLINGER TOSTRING(ARCHER1)
-#define BOWMAN TOSTRING(ARCHER2)
-#define ARQUEBUSIER TOSTRING(ARCHER3)
-
 class ArcherType : public AnyEntity
 {
 public:
 	ArcherType()
-	{
-		
-	}
-	void makeNewType() override
+		: AnyEntity('W', 100, 50, 10, 1, 1, 1, 1)
 	{
 
-	};
+	}
+private:
+	void makeAMove() override
+	{
+		useMagicSkill();
+	}
+	virtual void useMagicSkill() = 0;
+	virtual void useAttack() = 0;
+	virtual void travelAroundTheMap() = 0;
+
 };
 
 
@@ -28,11 +27,24 @@ class Slinger : public ArcherType
 public:
 	Slinger()
 	{
-		
+
 	}
-	void makeNewType() override
+	void travelAroundTheMap() override
 	{
-		
+
+	}
+	void useAttack() override
+	{
+
+	}
+	void useMagicSkill() override
+	{
+		useSlingerSkill();
+	}
+
+	void useSlingerSkill()
+	{
+		std::cout << "Slinger skill\n";
 	}
 };
 
@@ -43,10 +55,21 @@ public:
 	{
 		
 	}
-	void makeNewType() override
+	void travelAroundTheMap() override
 	{
-		
 
+	}
+	void useAttack() override
+	{
+
+	}
+	void useMagicSkill() override
+	{
+		useBowmanSkill();
+	}
+	void useBowmanSkill()
+	{
+		std::cout << "Bowman skill\n";
 	}
 };
 
@@ -55,13 +78,26 @@ class Arquebusier : public Bowman
 public:
 	Arquebusier()
 	{
-		
+
 	}
-	void makeNewType() override
+	void travelAroundTheMap() override
 	{
-		
+
 	}
-	
+	void useAttack() override
+	{
+
+	}
+	void useMagicSkill() override
+	{
+		useArquebusierSkill();
+	}
+
+	void useArquebusierSkill()
+	{
+		std::cout << "arkebuzer skill\n";
+	}
+
 };
 
 

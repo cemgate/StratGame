@@ -1,46 +1,96 @@
 #pragma once
 #include"Entity.h"
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-#define HORSE TOSTRING(VEHICLE1)
-#define CHARIOT TOSTRING(VEHICLE2)
-#define UNICORN TOSTRING(VEHICLE3)
-
 class VehicleType : public AnyEntity 
 {
 public:
-	void makeNewType() override
+	VehicleType() : AnyEntity('W', 100, 50, 10, 1, 1, 1, 1) {}
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Horse : public VehicleType
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Chariot : public Horse
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Unicorn : public Chariot
 {
 public:
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 

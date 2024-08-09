@@ -142,6 +142,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SiegeFactory.cpp" />
     <ClCompile Include="SiegeType.cpp" />
+    <ClCompile Include="Utilities.cpp" />
     <ClCompile Include="VehicleFactory.cpp" />
     <ClCompile Include="VehicleType.cpp" />
     <ClCompile Include="WarriorFactory.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="SiegeFactory.h" />
     <ClInclude Include="SiegeType.h" />
+    <ClInclude Include="Utilities.h" />
     <ClInclude Include="VehicleFactory.h" />
     <ClInclude Include="VehicleType.h" />
     <ClInclude Include="WarriorFactory.h" />

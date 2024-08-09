@@ -2,24 +2,31 @@
 #include"Entity.h"
 #include <iostream>
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-#define CATAPULT TOSTRING(SIEGE1)
-#define RAM TOSTRING(SIEGE2)
-#define GROND TOSTRING(SIEGE3)
-
 class SiegeType : public AnyEntity
 {
 public:
-	SiegeType()
+	SiegeType() : AnyEntity('W', 100, 50, 10, 1, 1, 1, 1)
 	{
 		std::cout << "stworzylem Siege \n";
 	}
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Catapult : public SiegeType
@@ -29,10 +36,24 @@ public:
 	{
 		std::cout << "stworzylem Catapult \n";
 	}
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Ram : public Catapult
@@ -42,11 +63,25 @@ public:
 	{
 		std::cout << "stworzylem Ram \n";
 	}
-	void makeNewType() override
+	
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
 
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Grond : public Ram
@@ -56,9 +91,23 @@ public:
 	{
 		std::cout << "stworzylem Grond \n";
 	}
-	void makeNewType() override
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 

@@ -2,25 +2,34 @@
 #include"Entity.h"
 #include <iostream>
 
-#define STRINGIFY(x) #x
-#define TOSTRING(x) STRINGIFY(x)
-
-#define WOODMAN TOSTRING(WORKER1)
-#define MINER TOSTRING(WORKER2)
-#define DIAMONDMINER TOSTRING(WORKER3)
-
 
 class WorkerType : public AnyEntity
 {
 public:
-	WorkerType()
-	{
-		
-	}
-	void makeNewType() override
+	WorkerType() : AnyEntity('W', 100, 50, 10, 1, 1, 1, 1)
 	{
 
-	};
+
+	}
+
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
+	{
+
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Woodman : public WorkerType
@@ -28,12 +37,26 @@ class Woodman : public WorkerType
 public:
 	Woodman()
 	{
-		
+
 	}
-	void makeNewType() override 
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class Miner : public Woodman
@@ -41,12 +64,26 @@ class Miner : public Woodman
 public:
 	Miner()
 	{
-		
+
 	}
-	void makeNewType() override 
+	virtual void makeAMove() override
+	{
+	}
+
+	virtual void useMagicSkill() override
 	{
 
-	};
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 
 class DiamondMiner : public Miner
@@ -54,10 +91,25 @@ class DiamondMiner : public Miner
 public:
 	DiamondMiner()
 	{
-		std::cout << "zrobilem diamond";
+		
 	}
-	void makeNewType() override final {
+	virtual void makeAMove() override
+	{
+	}
 
-	};
+	virtual void useMagicSkill() override
+	{
+
+	}
+
+	virtual void useAttack()  override
+	{
+
+	}
+
+	virtual void travelAroundTheMap() override
+	{
+
+	}
 };
 

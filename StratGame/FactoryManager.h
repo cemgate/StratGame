@@ -1,47 +1,45 @@
 #pragma once
-#include"Entity.h"
-
-#include"AbstractCharacterFactory.h"
 #include"ArcherFactory.h"
 #include"MageFactory.h"
 #include"SiegeFactory.h"
 #include"VehicleFactory.h"
 #include"WarriorFactory.h"
 #include"WorkerFactory.h"
-
-#include<memory>
 #include<map>
 
 
-class FactoryManager 
+class FactoryManager
 {
 public:
-    FactoryManager() 
-    {
-        // Inicjalizacja fabryk
-        factories["Archer"] = std::make_unique<ArcherFactory>();
-        factories["Mage"] = std::make_unique<MageFactory>();
-        factories["Siege"] = std::make_unique<SiegeFactory>();
-        factories["Vehicle"] = std::make_unique<VehicleFactory>();
-        factories["Warrior"] = std::make_unique<WarriorFactory>();
-        factories["Worker"] = std::make_unique<WorkerFactory>();
-    }
+	FactoryManager()
+	{
+		// Inicjalizacja fabryk
+		factories['A'] = std::make_unique<ArcherFactory>();
+		factories['M'] = std::make_unique<MageFactory>();
+		factories['S'] = std::make_unique<SiegeFactory>();
+		factories['V'] = std::make_unique<VehicleFactory>();
+		factories['W'] = std::make_unique<WarriorFactory>();
+		factories['X'] = std::make_unique<WorkerFactory>();
+	}
 
-    std::unique_ptr<AnyEntity> createEntity(const std::string& typeOfUnit, int evolutionOfUnit) 
-    {
-        auto whichFactory = factories.find(typeOfUnit);
-        if (whichFactory != factories.end()) 
-        {
-            return whichFactory->second->createCharacter(evolutionOfUnit);
-        }
-        else 
-        {
-            return nullptr;
-        }
-    }
 
+
+	std::unique_ptr<AnyEntity> createEntity(const char typeOfUnit, const int evolution)
+	{
+		auto whichFactory = factories.find(typeOfUnit);
+
+		if (whichFactory != factories.end())
+		{
+			return whichFactory->second->createCharacter(evolution);
+		}
+		else
+		{
+			return nullptr;
+		}
+	}
+	
 private:
-    std::map<std::string, std::unique_ptr<AbstractCharacterFactory>> factories;
+	std::map<char, std::unique_ptr<AbstractCharacterFactory>> factories;
 };
 
 
