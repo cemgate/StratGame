@@ -3,6 +3,7 @@
 #include "FactoryManager.h"
 #include "GameManager.h"
 #include "MapGenerator.h"
+#include "Logger.hpp"
 
 
 
@@ -15,5 +16,7 @@ int main(void)
 
 	std::vector<std::vector<char>> siema = MapManager::generateRandomMap();
 
+	log.Info() << LOG_FUNC() << " Starting machine git gut";
+	
     Utilities::printColoredMap(siema);
 }     
